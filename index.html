@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Project Catalogue</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=IBM+Plex+Mono:ital@1&family=Martian+Mono:wght@300&family=Mountains+of+Christmas:wght@700&family=Press+Start+2P&family=Quantico&family=Rubik+Mono+One&family=VT323&display=swap" rel="stylesheet">
+
+<style> /* Projects Set */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Kenia&family=Libre+Barcode+39&family=Libre+Barcode+39+Extended+Text&family=Love+Ya+Like+A+Sister&family=Luxurious+Roman&family=Macondo&family=Merienda:wght@900&family=Nabla&family=Press+Start+2P&family=Rubik+80s+Fade&family=Yatra+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=IBM+Plex+Mono:ital@1&family=Martian+Mono:wght@300&family=Mountains+of+Christmas:wght@700&family=Press+Start+2P&family=Quantico&family=Rubik+Mono+One&family=VT323&display=swap');
+
+body{
+    margin:0;
+    background-image:url("chaos5.jpg");
+    background-size:cover;
+}
+
+#titleBorder{
+    margin:10px;
+    border:2px solid white;
+    border-radius:15px;
+    background-image:radial-gradient(white, rgba(220, 27, 27, 0.25));
+}
+       
+#titleHead{
+    text-align:center;
+    font-family:'Quantico';
+    font-size:45px;
+    margin:0px;
+    padding:5px;
+}
+
+#navBar{
+    display:flex;
+    justify-content:space-around;
+    margin-top:0%;
+    position:fixed;
+    right:0;
+    left:0;
+    top:94.25%;
+    z-index:5;
+}
+
+.bttnSet{
+    width:25%;
+    border:none;
+    background-color:transparent;
+    border-radius:0;
+
+    font-family: 'IBM Plex Mono', monospace;
+    font-size:20px;
+
+    padding:10px;
+    color: white;
+    text-align: center;
+}
+
+#BttnMain{
+    text-shadow:white 0px 0px 10px;
+    font-weight:600;
+}
+
+.border{
+    border:1px solid black;
+    background-color:rgba(215, 146, 43, 0.25);
+    transition: ease 0.5s;
+}
+
+#prjSet{
+    display:grid;
+    grid-template-columns:auto auto auto auto auto auto;
+    justify-content:space-around;
+    row-gap:40px;
+    margin-top:40px;
+    margin-bottom:80px;    
+}
+        
+.prjBox{
+    display:flex;
+    align-content: center;
+        
+    width:150px;
+    height:100px;
+    background-image:linear-gradient(60deg, orangered, purple);
+    background-image: url("Capture.PNG");
+    background-size:contain;
+        
+    border:5px groove grey;
+    border-radius:15px;
+    z-index:1;
+        
+    transform:perspective(400px) rotateY(35deg);
+    filter:drop-shadow(black 10px 10px 10px);
+    transition:ease 1s;
+}
+        
+.prjBox:hover{
+    transform: rotateY(0) scale(1.5);
+    border-radius:30px;
+    filter:drop-shadow(rgba(0, 0, 0, 0.45) 2px 5px 8px);
+        
+    z-index:3;
+}
+        
+.bttn{
+    align-self:center;
+    align-content:center;
+    color:lightgray;
+    text-shadow:1px 1px 0 black;
+    text-align:center;
+    text-decoration: wavy;
+        
+        
+    display:inline-block;
+    font-family:Helvetica;
+    font-size:15px;
+    font-weight:700;
+    text-decoration:none;
+
+}
+        
+</style>
+
+</head>
+<body>
+
+    <div id="titleBorder">
+        <h1 id="titleHead">Project Catalogue</h1>
+    </div>
+
+    <div id="prjSet">
+        <div class="prjBox" id="Resume">
+            <a href="https://novahawkins.github.io/CSS-Resume/" target="_blank" class="bttn">Some Random Resume</a>
+        </div>
+        <div class="prjBox" id="Calculator">
+            <a href="https://novahawkins.github.io/Calculator-App/" target="_blank" class="bttn">Useless Calculator App</a>
+        </div>
+        <div class="prjBox" id="QuizApp">
+            <a href="https://novahawkins.github.io/Quiz-App/" target="_blank" class="bttn">A random Quiz Thingy</a>
+        </div>
+        <div class="prjBox" id="GameDev">
+            <a href="https://novahawkins.github.io/Spot-the-Color-Game/" target="_blank" class="bttn">Slightly Broken Spot the Color Game</a>
+        </div>
+        <div class="prjBox" id="Animation">
+            <a href="https://novahawkins.github.io/Animation-Shenanigans/" target="_blank" class="bttn">Animation Shenanigans</a>
+        </div>
+        <div class="prjBox" id="PhotoAlbum">
+            <a href="https://novahawkins.github.io/MothsAndMushrooms/" target="_blank" class="bttn">Moths and Mushrooms Photo Album</a>
+        </div>
+        <div class="prjBox" id="FlexboxWebpage">
+            <a href="no" target="_blank" class="bttn">Copied Flexbox Webpage</a>
+        </div>
+        <div class="prjBox" id="FormValidation">
+            <a href="https://novahawkins.github.io/OrderForm.github.io/" target="_blank" class="bttn">An Order Form Thingy</a>
+        </div>
+        <div class="prjBox" id="jQueryWebpage">
+            <a href="https://novahawkins.github.io/jQuery-Webpage/" target="_blank" class="bttn">Depressing jQuery Webpage</a>
+        </div>
+        <div class="prjBox" id="ContentCard">
+            <a href="Also_No" target="_blank" class="bttn">Fugly Content Card</a>
+        </div>
+        <div class="prjBox" id="GoofyCostumes">
+            <a href="https://novahawkins.github.io/Grid-Advert-Thingy/" target="_blank" class="bttn">Annoying Grid Costume Advert Thingy</a>
+        </div>
+        <div class="prjBox" id="Calendar">
+            <a href="Please_stop" target="_blank" class="bttn">Javascript Calendar</a>
+        </div>
+        <div class="prjBox" id="CanvasPrac">
+            <a href="https://novahawkins.github.io/Canvas-Practice/" target="_blank" class="bttn">Canvas Shenanigans</a>
+        </div>
+        <div class="prjBox" id="SVGPrac">
+            <a href="https://novahawkins.github.io/SVG-Practice/" target="_blank" class="bttn">SVG Shenanigans</a>
+        </div>
+        <div class="prjBox" id="eCommerce">
+            <a href="https://novahawkins.github.io/Bootstrap-Ecommerce-Website/" target="_blank" class="bttn">eCommerce website</a>
+        </div>
+        <div class="prjBox" id="Notily">
+            <a href="https://novahawkins.github.io/ToDo-list/" target="_blank" class="bttn">Notily(kinda broken lol)</a>
+        </div>
+        <div class="prjBox" id="SVG-Filters">
+            <a href="nuh-uh!" target="_blank" class="bttn">SVG Filters Practice (idk why we have to have this on our portfolio)</a>
+        </div>
+        <div class="prjBox" id="CSS-Filters">
+            <a href="https://novahawkins.github.io/CSS-Filters-Practice/" target="_blank" class="bttn">CSS Filters Practice (Why do we have to have this????)</a>
+        </div>
+        <div class="prjBox" id="WeatherApp">
+            <a href="Nauhr" target="_blank" class="bttn">API Weather App</a>
+        </div>
+        <div class="prjBox" id="CSS-MedQueries">
+            <a href="Nope_<3" target="_blank" class="bttn">CSS Media Queries Practice (Again, WHY IS THIS REQUIRED TO BE HERE??!??!?!?)</a>
+        </div>
+    </div>
+
+      <div id="navBar">
+        <button class="bttnSet" onclick="document.location='https://novahawkins.github.io/Portfolio-Main-Page/'"><div class="border" id="BttnMain"><b>Home</b></div></button>
+        <button class="bttnSet" onclick="document.location='https://novahawkins.github.io/Portfolio-Project-Page/'"><div class="border">Projects</div></button>
+        <button class="bttnSet" onclick="document.location='https://novahawkins.github.io/Portfolio-About-Page/'"><div class="border">About Me</div></button>
+        <button class="bttnSet" onclick="document.location='https://novahawkins.github.io/Portfolio-Contact-Page/'"><div class="border">Contacts</div></button>
+    </div>
+
+</body>
+</html>
